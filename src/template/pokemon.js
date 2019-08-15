@@ -6,13 +6,13 @@ export default ({ data }) => {
   const { name, type, base, image } = pokemon
   return (
     <div>
+      <Link to="/">Go back</Link>
       <h1>Name {name.english}</h1>
       <h1>Type {type.join(", ")}</h1>
       <h1>base Attack {base.Attack}</h1>
       <h1>base Defense {base.Defense}</h1>
       <img src={image} />
       <br />
-      <Link to="/">Go back</Link>
     </div>
   )
 }

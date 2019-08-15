@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default ({ data }) => {
   return (
     <>
-      <h1>Pokedex</h1>
+      <h1>Pokédex</h1>
       {data.allPokemonJson.edges.map(({ node }) => {
         return (
           <div key={node.name.english}>
